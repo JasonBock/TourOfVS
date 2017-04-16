@@ -13,6 +13,11 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Collatz.Tests", "Collatz.Te
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collatz.Tests.NETFramework", "Collatz.Tests.NETFramework\Collatz.Tests.NETFramework.csproj", "{81485493-01C1-472F-B74A-FE08CDFF60B8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7AE52BBD-2190-4E6F-AE9B-8183CDB05378}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Collatz.Tests\Collatz.Tests.projitems*{0e95047f-adfe-46ca-a108-0e5c17cd9268}*SharedItemsImports = 13

@@ -13,5 +13,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)InvalidValueException.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ISequenceGenerator.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BigIntegerSequenceGenerator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\SequenceStatisticsExtensions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Extensions\" />
   </ItemGroup>
 </Project>

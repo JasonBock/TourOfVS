@@ -12,14 +12,12 @@ namespace Collatz.Tests
 			var generator = new BigIntegerSequenceGenerator();
 			var sequence = generator.Generate(start);
 
-			Assert.Equal(new BigInteger[] { 12, 6, 3, 10, 5, 16, 8, 4, 2, 1 }, sequence);
+			// The original sequence I grabbed 
+			// (from https://en.wikipedia.org/wiki/Collatz_conjecture)
+			// was this:
+			//Assert.Equal(new BigInteger[] { 12, 6, 3, 10, 5, 16, 8, 4, 2, 1 }, sequence);
+			Assert.Equal(new BigInteger[] { 12, 6, 3, 5, 8, 4, 2, 1 }, sequence);
 		}
-
-		//Assert.Equal(new BigInteger[] { 12, 6, 3, 5, 8, 4, 2, 1 }, sequence);
-
-		// The original sequence I grabbed 
-		// (from https://en.wikipedia.org/wiki/Collatz_conjecture)
-		// was this:
 
 		[Fact]
 		public void CreateWithValueLessThan1()
