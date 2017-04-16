@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Collatz", "Collatz\Collatz.shproj", "{8A891181-39BB-4D89-97D0-DF9755B8E207}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collatz.NETFramework", "Collatz.NETFramework\Collatz.NETFramework.csproj", "{41D733CF-7AA5-4273-8683-46FCE8BBB563}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collatz.NETCore", "Collatz.NETCore\Collatz.NETCore.csproj", "{84B4AB1D-B717-4F2A-8950-FC609A8B41D9}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Collatz.Tests", "Collatz.Tests\Collatz.Tests.shproj", "{0E95047F-ADFE-46CA-A108-0E5C17CD9268}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collatz.Tests.NETFramework", "Collatz.Tests.NETFramework\Collatz.Tests.NETFramework.csproj", "{81485493-01C1-472F-B74A-FE08CDFF60B8}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Collatz.Tests\Collatz.Tests.projitems*{0e95047f-adfe-46ca-a108-0e5c17cd9268}*SharedItemsImports = 13
+		Collatz.Tests\Collatz.Tests.projitems*{81485493-01c1-472f-b74a-fe08cdff60b8}*SharedItemsImports = 4
+		Collatz\Collatz.projitems*{8a891181-39bb-4d89-97d0-df9755b8e207}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{41D733CF-7AA5-4273-8683-46FCE8BBB563}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41D733CF-7AA5-4273-8683-46FCE8BBB563}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41D733CF-7AA5-4273-8683-46FCE8BBB563}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41D733CF-7AA5-4273-8683-46FCE8BBB563}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84B4AB1D-B717-4F2A-8950-FC609A8B41D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84B4AB1D-B717-4F2A-8950-FC609A8B41D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84B4AB1D-B717-4F2A-8950-FC609A8B41D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84B4AB1D-B717-4F2A-8950-FC609A8B41D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81485493-01C1-472F-B74A-FE08CDFF60B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81485493-01C1-472F-B74A-FE08CDFF60B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81485493-01C1-472F-B74A-FE08CDFF60B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81485493-01C1-472F-B74A-FE08CDFF60B8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
