@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Collatz.Extensions;
+using System;
 using System.Numerics;
 using Xunit;
 
@@ -10,7 +11,7 @@ namespace Collatz.Tests.Extensions
 		public void Create()
 		{
 			var start = new BigInteger(12);
-			var generator = new BigIntegerSequenceGenerator();
+			var generator = new SequenceGenerator();
 			var statistics = generator.Generate(start).GetStatistics();
 			Assert.Equal(5, statistics.Even);
 			Assert.Equal(3, statistics.Odd);
@@ -18,15 +19,9 @@ namespace Collatz.Tests.Extensions
 		}
 
 		[Fact]
-		public void CreateWithEmptySequence()
-		{
-			Assert.Throws<InvalidOperationException>(() => new BigInteger[0].GetStatistics());
-		}
-
-		[Fact]
 		public void CreateWithNullSequence()
 		{
-			Assert.Throws<NullReferenceException>(() => (null as BigInteger[]).GetStatistics());
+			Assert.Throws<ArgumentNullException>(() => (null as BigInteger[]).GetStatistics());
 		}
 	}
 }

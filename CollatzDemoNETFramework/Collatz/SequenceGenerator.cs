@@ -1,18 +1,18 @@
 ﻿using System.Collections.Generic;
+using System.Numerics;
 
 namespace Collatz
 {
-	public sealed class Int32SequenceGenerator
-		: ISequenceGenerator<int>
+	public sealed class SequenceGenerator : ISequenceGenerator
 	{
-		public int[] Generate(int value)
+		public BigInteger[] Generate(BigInteger value)
 		{
-			if(value < 1)
+			if (value < 1)
 			{
-				throw new InvalidValueException<int>(value);
+				throw new InvalidValueException(value);
 			}
 
-			var sequence = new List<int>();
+			var sequence = new List<BigInteger>();
 
 			sequence.Add(value);
 

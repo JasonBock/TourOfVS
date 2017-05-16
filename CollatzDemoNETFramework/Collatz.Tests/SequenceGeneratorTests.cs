@@ -3,13 +3,13 @@ using Xunit;
 
 namespace Collatz.Tests
 {
-	public sealed class BigIntegerSequenceGeneratorTests
+	public sealed class SequenceGeneratorTests
 	{
 		[Fact]
 		public void Create()
 		{
 			var start = new BigInteger(12);
-			var generator = new BigIntegerSequenceGenerator();
+			var generator = new SequenceGenerator();
 			var sequence = generator.Generate(start);
 
 			// The original sequence I grabbed 
@@ -23,8 +23,8 @@ namespace Collatz.Tests
 		public void CreateWithValueLessThan1()
 		{
 			var start = BigInteger.Zero;
-			var generator = new BigIntegerSequenceGenerator();
-			Assert.Throws<InvalidValueException<BigInteger>>(() => generator.Generate(start));
+			var generator = new SequenceGenerator();
+			Assert.Throws<InvalidValueException>(() => generator.Generate(start));
 		}
 	}
 }
