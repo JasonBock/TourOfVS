@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Generate INotifyPropertyChanged Class</Title>
+			<Author>Jason Bock</Author>
+			<Description>Creates a class that implements INotifyPropertyChanged.</Description>
+			<Shortcut>inpc</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="CSharp">
+				<![CDATA[public class $YourClassName$ 
+	: INotifyPropertyChanged
+{
+	public event PropertyChangedEventHandler PropertyChanged;
+
+	private void NotifyPropertyChanged([CallerMemberName] string propertyName = "") =>
+		PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+}]]>
+			</Code>
+			<Declarations>
+				<Literal>
+					<ID>YourClassName</ID>
+					<ToolTip>Enter in the class name.</ToolTip>
+					<Default>MyClass</Default>
+				</Literal>
+			</Declarations>
+			<Imports>
+				<Import>
+					<Namespace>System.ComponentModel</Namespace>
+				</Import>
+				<Import>
+					<Namespace>System.Runtime.CompilerServices</Namespace>
+				</Import>
+			</Imports>
+		</Snippet>
+    </CodeSnippet>
+</CodeSnippets>

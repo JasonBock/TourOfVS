@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Generate INotifyPropertyChanged Property</Title>
+			<Author>Jason Bock</Author>
+			<Description>Creates a property that works with INotifyPropertyChanged.</Description>
+			<Shortcut>inpcprop</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="CSharp">
+				<![CDATA[private $PropertyType$ $PropertyFieldName$;
+public $PropertyType$ $PropertyName$
+{
+	get => this.$PropertyFieldName$;
+	set
+	{
+		if (value != this.$PropertyFieldName$)
+		{
+			this.$PropertyFieldName$ = value;
+			this.NotifyPropertyChanged();
+		}
+	}
+}]]>
+			</Code>
+			<Declarations>
+				<Literal>
+					<ID>PropertyType</ID>
+					<ToolTip>Enter in the property type.</ToolTip>
+					<Default>int</Default>
+				</Literal>
+				<Literal>
+					<ID>PropertyFieldName</ID>
+					<ToolTip>Enter in the property field name.</ToolTip>
+					<Default>id</Default>
+				</Literal>
+				<Literal>
+					<ID>PropertyName</ID>
+					<ToolTip>Enter in the property name.</ToolTip>
+					<Default>Id</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+    </CodeSnippet>
+</CodeSnippets>
